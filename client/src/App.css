@@ -114,24 +114,23 @@
   color: #fafafa;
   cursor: pointer;
   display: inline-flex;
-  fill: #fafafa;
-  font-family: Inter,sans-serif;
-  font-size: 16px;
-  font-weight: 600;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 22px;
+  font-weight: 400;
   height: 48px;
   justify-content: center;
-  letter-spacing: .8px;
-  line-height: 24px;
+  letter-spacing: 1.2px;
+  /* line-height: 24px; */
   min-width: 256px;
   outline: 0;
-  padding: 0 17px;
+  padding: 7 17px;
   text-align: center;
   text-decoration: none;
   transition: .3s ease;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin: 80px 200px;
+  margin: 80px 100px;
 }
 
 .button:focus {
@@ -166,13 +165,13 @@
   
   display: flex;
   align-items: center;
-  padding: 10px 20px;
+  padding: 15px 20px;
   justify-content: space-around;
 }
 .logo{
   font-size: 20px;
   font-weight: bold;
-  height: 40px;
+  height: 30px;
 }
 .list {
   display: flex;
@@ -389,7 +388,8 @@ h2{
   position: relative;
   width: 100%;
   max-width: 650px;
-
+  left: 50%;
+  transform: translate(-50%);
 }
 
 input {
@@ -405,7 +405,7 @@ input {
   0 16px 32px rgba(0,0,0,0.07), 
   0 32px 64px rgba(0,0,0,0.07);
   display: flex;
-  
+  color: #FEFBFE;
 }
 
 input:focus {

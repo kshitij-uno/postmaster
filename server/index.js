@@ -29,7 +29,7 @@ app.post('/completions', async (req, res) =>  {
         },
         body: JSON.stringify({
             model: "gpt-3.5-turbo",
-            messages: [{ role: "user", content: 'Generate a LinkedIn Post for ' + req.body.message}],
+            messages: [{ role: "user", content: 'Generate a LinkedIn Post (using no more than 2980 characters but try to keep it short for better audience engagement) for ' + req.body.message}],
             max_tokens: 20,
         })
     }
@@ -51,8 +51,8 @@ app.post('/completionstw', async (req, res) =>  {
         },
         body: JSON.stringify({
             model: "gpt-3.5-turbo",
-            messages: [{ role: "user", content: 'Generate a Tweet for ' + req.body.message }],
-            max_tokens: 20,
+            messages: [{ role: "user", content: 'Generate a Tweet (using no more than 280 characters) for ' + req.body.message }],
+            max_tokens: 75,
         })
     }
     try {
@@ -74,8 +74,8 @@ app.post('/completionsIn', async (req, res) =>  {
         },
         body: JSON.stringify({
             model: "gpt-3.5-turbo",
-            messages: [{ role: "user", content: 'Generate an Instagram Post for ' + req.body.message}],
-            max_tokens: 20,
+            messages: [{ role: "user", content: 'Generate an Instagram Post (using no more than 2190 characters but try to keep it short for better audience engagement) for ' + req.body.message}],
+            max_tokens: 560,
         })
     }
     try {

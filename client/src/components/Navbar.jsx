@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-//import { logo } from '../assets'
+import  logo  from '../assets/logo.png'
 
 import { useState, useEffect } from 'react'
 import supabase from '../supabase'
@@ -27,7 +27,7 @@ const Navbar = () => {
     <div className="navbar">
         <span className="logo">
             <Link className="link" to="/">
-            <img src="" alt="Post_Master_Logo" className="logo" />
+            <img src={logo} alt="Post_Master_Logo" className="logo" />
             </Link>
             
         </span>
