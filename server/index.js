@@ -4,7 +4,7 @@ import cors from 'cors'
 import * as dotenv from 'dotenv'
 
 
-const PORT = 8000
+const PORT = 10000
 
 const app = express()
 
