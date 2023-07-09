@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import fetch from 'node-fetch'
 const Post = () => {
 
     const [ value, setValue ] = useState(null)
