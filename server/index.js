@@ -30,7 +30,7 @@ app.post('/completions', async (req, res) =>  {
         body: JSON.stringify({
             model: "gpt-3.5-turbo",
             messages: [{ role: "user", content: 'Generate a LinkedIn Post (using no more than 2980 characters but try to keep it short for better audience engagement) for ' + req.body.message}],
-            max_tokens: 20,
+            max_tokens: 750,
         })
     }
     try {

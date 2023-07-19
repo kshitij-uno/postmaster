@@ -22,7 +22,7 @@ const Post = () => {
       }
     }
     try {
-      const response = await fetch('http://localhost:10000/completions', options)
+      const response = await fetch('https://postmaster-61fj.onrender.com/completions', options)
       const data = await response.json()
       console.log(data)
       setMessage(data.choices[0].message.content)
@@ -43,7 +43,7 @@ const Post = () => {
       }
     }
     try {
-      const response = await fetch('http://localhost:10000/completionstw', options)
+      const response = await fetch('https://postmaster-61fj.onrender.com/completionstw', options)
       const data = await response.json()
       console.log(data)
       setTwMessage(data.choices[0].message.content)
@@ -66,7 +66,7 @@ const Post = () => {
       }
     }
     try {
-      const response = await fetch('http://localhost:10000/completionsIn', options)
+      const response = await fetch('https://postmaster-61fj.onrender.com/completionsIn', options)
       const data = await response.json()
       console.log(data)
       setInMessage(data.choices[0].message.content)

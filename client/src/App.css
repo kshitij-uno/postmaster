@@ -85,7 +85,7 @@
   @apply font-black bg-gradient-to-r from-blue-400 to-cyan-200 bg-clip-text text-transparent;
 }
 .desc {
-  @apply mt-20 text-lg text-gray-200 sm:text-xl text-center max-w-2xl;
+  @apply mt-20 text-sm text-gray-200 sm:text-sm text-center max-w-2xl px-2 py-2;
 }
 .home-outer {
   height: calc(100vh - 120px);
